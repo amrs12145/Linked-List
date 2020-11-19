@@ -23,6 +23,20 @@ class stack
         n->next = top;
         top = n;
     }
+    int pop()
+    {
+        if ( !isEmpty() )
+        {
+        int res = top.data;
+        top = top.next;
+        return res;
+        }
+    }
+    bool isEmpty()
+    {
+      return top == null ;
+    }
+
 
 };
 
