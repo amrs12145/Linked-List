@@ -49,5 +49,13 @@ class stack
 int main()
 {
     cout<<"Hello world";
+    
+    stack<int> obj = new stack();
+    obj.push(1);
+    obj.push(2);
+    obj.push(3);
+    obj.pop();
+    cout<< obj.pop();
+
     return 0;
 }
